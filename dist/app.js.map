@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":["btn","document","querySelectorAll","forEach","btnn","addEventListener","nextElementSibling","classList","toggle"],"mappings":"AAAA,MAAMA,IAAM,IAAIC,SAASC,iBAAiB,mBAE1CF,IAAIG,SAASC,IACXA,EAAKC,iBAAiB,SAAS,KAC7BD,EAAKE,mBAAmBC,UAAUC,OAAO","file":"app.js"}

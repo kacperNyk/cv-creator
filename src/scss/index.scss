@@ -1,0 +1,19 @@
+*,::before,::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.dropdown__element{
+    background-color: violet;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.hidden{
+    display: none;
+}
