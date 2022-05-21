@@ -1,0 +1,7 @@
+$small: 1100px;
+
+@mixin half-break {
+    @media (min-width: $small){
+        @content;
+    }
+}

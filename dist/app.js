@@ -1,2 +1,2 @@
-const btn=[...document.querySelectorAll(".dropdown__btn")];btn.forEach((e=>{e.addEventListener("click",(()=>{e.nextElementSibling.classList.toggle("hidden")}))}));
+const btn=document.querySelector(".dropdown__btn").addEventListener("click",(()=>{document.querySelector(".dropdown__content").classList.toggle("hidden")}));
 //# sourceMappingURL=app.js.map

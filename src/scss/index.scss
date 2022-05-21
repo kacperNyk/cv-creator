@@ -1,3 +1,9 @@
+@use 'mixins.scss' as mix;
+@use 'vars.scss' as vars;
+@use 'breakpoints.scss' as bp;
+@use 'left-section.scss';
+@use 'right-section.scss';
+
 *,::before,::after{
     box-sizing: border-box;
 }
@@ -8,10 +14,25 @@ body{
     font-weight: 400;
 }
 
-.dropdown__element{
-    background-color: violet;
-    border: 1px solid black;
-    margin-top: 10px;
+header{
+    @include mix.flex-center();
+    height: 10vh;
+    width: 100vw;
+    background-color: vars.$darker-grey;
+    color: vars.$ligth-color;
+    & .cv__title{
+        transition: .3s ease;
+        &:hover{
+        border-bottom: 1px solid vars.$light-grey;
+    }
+    }
+}
+
+@include bp.half-break(){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .hidden{

@@ -1,0 +1,28 @@
+@use 'vars.scss' as vars;
+@use 'mixins.scss' as mix;
+
+.section__left{
+    @include mix.flex-center();
+    width: 100%;
+}
+
+.dropdown__elem__list{
+    list-style: none;
+    width: 90%;
+    & .dropdown__con{
+        padding: 10px;
+        border-bottom: 1px solid vars.$dark-color;
+        margin-bottom: 10px;
+    }
+}
+
+.dropdown__title__con{
+    @include mix.flex-center($justify: space-between);
+    height: fit-content;
+    width: 100%;
+    padding: 10px 5px;
+}
+
+.dropdown__content{
+    padding: 5px;
+}

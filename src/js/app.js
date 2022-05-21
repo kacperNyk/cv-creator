@@ -1,7 +1,7 @@
-const btn = [...document.querySelectorAll(".dropdown__btn")];
-
-btn.forEach((btnn) => {
-  btnn.addEventListener("click", () => {
-    btnn.nextElementSibling.classList.toggle("hidden");
+const btn = document
+  .querySelector(".dropdown__btn")
+  .addEventListener("click", () => {
+    const dropdowncontent = document
+      .querySelector(".dropdown__content")
+      .classList.toggle("hidden");
   });
-});

@@ -14,39 +14,41 @@
     <script src="dist/app.js" defer></script>
 </head>
 <body>
+    <header>
+        <div class="cv__title">CV Kacper nyk</div>
+    </header>
     <main>
-        <header>
-            <div class="cv__title">CV Kacper nyk</div>
-        </header>
         <section class="section__left">
-            <ul>
-                <li>
-                    <div class="dropdown__element">
-                        <div class="dropdown__title">Dane osobowe</div>
+            <ul class="dropdown__elem__list">
+                <li class="dropdown__con">
+                    <div class="dropdown__title__con">
+                        <div class="dropdown__title"><h2>Personal Data</h2></div>
                         <button class="dropdown__btn">btn</button>
-                        <section class="dropdown__content">
-                            <p class="dropdown_elem_title">name:</p>
-                            <input type="text" id="user__name_input">
-                            <label for=”birth”>date of birth: </label> <input type=”date” id=”birth” min=”1900-01-01″ max=”2021-12-31″>
-                        </section>
-                    </div> 
+                    </div>
+                    <section class="dropdown__content">
+                        <p class="dropdown_elem_title">name:</p>
+                        <input type="text" id="user__name_input">
+                        <label for=”birth”>date of birth: </label> <input type=”date” id=”birth” min=”1900-01-01″ max=”2021-12-31″>
+                    </section> 
                 </li>
-                <li>
-                    <div class="dropdown__element">
-                        <div class="dropdown__title">Dane osobowe</div>
+                <li class="dropdown__con">
+                    <div class="dropdown__title__con">
+                        <div class="dropdown__title"><h2>Skills</h2></div>
                         <button class="dropdown__btn">btn</button>
-                        <section class="dropdown__content">
-                            <p class="dropdown_elem_title">name:</p>
-                            <input type="text" id="user__name_input">
-                            <label for=”birth”>date of birth: </label> <input type=”date” id=”birth” min=”1900-01-01″ max=”2021-12-31″>
-                        </section>
-                    </div> 
+                    </div>
+                    <section class="dropdown__content">
+                        <div class="skills__con">
+                            <div class="skill">Coding</div>
+                            <div class="skill">Googling</div>
+                            <div class="skill">Beer</div>
+                        </div>
+                    </section> 
                 </li>
             </ul>
             <span class="material-symbols-outlined">arrow_forward</span>
         </section>
         <section class="section__right">
-
+            hello
         </section>
     </main>
 </body>
