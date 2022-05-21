@@ -1,28 +1,67 @@
-@use 'vars.scss' as vars;
-@use 'mixins.scss' as mix;
+@use "vars.scss" as vars;
+@use "mixins.scss" as mix;
+.section__left {
+  @include mix.flex-center();
+  width: 100%;
+}
 
-.section__left{
+.dropdown__elem__list {
+  list-style: none;
+  width: 90%;
+  & .dropdown__con {
+    padding: 10px;
+    border-bottom: 1px solid vars.$dark-color;
+    margin-bottom: 10px;
+  }
+}
+
+.dropdown__title__con {
+  @include mix.flex-center($justify: space-between);
+  height: min-content;
+  width: 100%;
+  padding: 1px 5px;
+}
+
+.dropdown__content {
+  padding: 5px;
+}
+
+.add__input__elem__con{
+    @include mix.flex-center($justify: flex-start);
+    flex-wrap: wrap;
+}
+
+.add__input__elem {
+  @include mix.flex-center();
+  border: 1px solid vars.$dark-color;
+  border-radius: 3px;
+  padding: 7px;
+  margin: 10px;
+  font-size: vars.$normal-font;
+  width: fit-content;
+  @include mix.hover-focus();
+
+  & .material-symbols-outlined{
+    font-size: 18px;
+  }
+}
+
+input {
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background-color: vars.$input-bg;
+  padding: 7px;
+  margin-bottom: 5px;
+  font-size: vars.$normal-font;
+  @include mix.hover-focus();
+}
+
+button{
+    border: 1px solid vars.$dark-color;
+    background: transparent;
+    padding: 7px;
+    font-size: vars.$normal-font;
     @include mix.flex-center();
-    width: 100%;
-}
-
-.dropdown__elem__list{
-    list-style: none;
-    width: 90%;
-    & .dropdown__con{
-        padding: 10px;
-        border-bottom: 1px solid vars.$dark-color;
-        margin-bottom: 10px;
-    }
-}
-
-.dropdown__title__con{
-    @include mix.flex-center($justify: space-between);
-    height: fit-content;
-    width: 100%;
-    padding: 10px 5px;
-}
-
-.dropdown__content{
-    padding: 5px;
+    @include mix.hover-focus();
 }

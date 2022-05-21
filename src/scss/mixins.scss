@@ -1,7 +1,8 @@
-@mixin flex-center ($direction:row, $justify: center){
+@use 'vars.scss' as vars;
+@mixin flex-center ($direction:row, $justify: center , $align: center){
     display: flex;
     justify-content: $justify;
-    align-items: center;
+    align-items: $align;
     flex-direction: $direction;
 }
 
@@ -15,4 +16,12 @@
     left: $left;
     right: $right;
     bottom: $bottom;
+}
+
+@mixin hover-focus() {
+    transition: border .1s ease;
+    &:hover,
+    &:focus {
+      border: 1px solid vars.$dark-violet;
+    }
 }

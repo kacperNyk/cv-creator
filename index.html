@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Poppins:ital,wght@0,300;1,400;1,600&family=Roboto:wght@100;400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="dist/index.css">
     <script src="dist/app.js" defer></script>
 </head>
@@ -23,24 +24,129 @@
                 <li class="dropdown__con">
                     <div class="dropdown__title__con">
                         <div class="dropdown__title"><h2>Personal Data</h2></div>
-                        <button class="dropdown__btn">btn</button>
+                        <button class="dropdown__btn"><span class="material-symbols-outlined">
+expand_more
+</span></button>
                     </div>
                     <section class="dropdown__content">
-                        <p class="dropdown_elem_title">name:</p>
-                        <input type="text" id="user__name_input">
-                        <label for=”birth”>date of birth: </label> <input type=”date” id=”birth” min=”1900-01-01″ max=”2021-12-31″>
+                        <p class="dropdown_elem_title">Name</p>
+                        <input type="text" id="user__name_input" placeholder="john smith">
+                        <label for=”birth”>
+                            <p class="dropdown__elem__title">Birthday</p>
+                            <input type=”date” id=”birth” min=”1900-01-01″ max=”2021-12-31″ placeholder="01.01.2000">
+                        </label>
+                        <p class="dropdown__elem__title">Email</p>
+                        <input type="email" id="email" placeholder="email@email.com">
+                        <label for="address" class="adress__label">
+                            <p class="dropdown__elem__title">Addres</p>
+                            <input type="text" id="city-name" placeholder="New York">
+                            <input type="text" id="city-number" placeholder="100-100">
+                            <input type="text" id="street" placeholder="street">
+                        </label>
+                        <p class="dropdown__elem__title">Phone</p>
+                        <input type="tel" id="phone-number" placeholder="000-000-000">
+                        <label for="optional__inputs" class="add__input__elem__con">
+                            <div class="add__input__elem"><span class="material-symbols-outlined">add</span><span>Driver Licence</span></div>
+                            <div class="add__input__elem"><span class="material-symbols-outlined">add</span><span>Gender</span></div>
+                            <div class="add__input__elem"><span class="material-symbols-outlined">add</span><span>Nationality</span></div>
+                            <div class="add__input__elem"><span class="material-symbols-outlined">add</span><span>My Website</span></div>
+                            <div class="add__input__elem"><span class="material-symbols-outlined">add</span><span>Linkedin</span></div>
+                            <div class="add__input__elem"><span class="material-symbols-outlined">add</span><span>Nonstandard</span></div>
+                            
+                        </label>
                     </section> 
                 </li>
                 <li class="dropdown__con">
                     <div class="dropdown__title__con">
                         <div class="dropdown__title"><h2>Skills</h2></div>
-                        <button class="dropdown__btn">btn</button>
+                        <button class="dropdown__btn"><span class="material-symbols-outlined">
+expand_more
+</span></button>
                     </div>
                     <section class="dropdown__content">
-                        <div class="skills__con">
-                            <div class="skill">Coding</div>
-                            <div class="skill">Googling</div>
-                            <div class="skill">Beer</div>
+                        <div class="add__input__elem__con">
+                            <div class="add__input__elem"><span class="material-symbols-outlined">add</span><span>Coding</span></div>
+                            <div class="add__input__elem"><span class="material-symbols-outlined">add</span><span>Googling</span></div>
+                            <div class="add__input__elem"><span class="material-symbols-outlined">add</span><span>Beer</span></div>
+                        </div>
+                    </section> 
+                </li>
+                <li class="dropdown__con">
+                    <div class="dropdown__title__con">
+                        <div class="dropdown__title"><h2>Experience</h2></div>
+                        <button class="dropdown__btn"><span class="material-symbols-outlined">
+expand_more
+</span></button>
+                    </div>
+                    <section class="dropdown__content">
+                        <div class="content__creator__con">
+                            <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add experience</span></button>
+                        </div>
+                    </section> 
+                </li>
+                <li class="dropdown__con">
+                    <div class="dropdown__title__con">
+                        <div class="dropdown__title"><h2>Education</h2></div>
+                        <button class="dropdown__btn"><span class="material-symbols-outlined">
+expand_more
+</span></button>
+                    </div>
+                    <section class="dropdown__content">
+                        <div class="content__creator__con">
+                            <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add education</span></button>
+                        </div>
+                    </section> 
+                </li>
+                <li class="dropdown__con">
+                    <div class="dropdown__title__con">
+                        <div class="dropdown__title"><h2>Languages</h2></div>
+                        <button class="dropdown__btn"><span class="material-symbols-outlined">
+expand_more
+</span></button>
+                    </div>
+                    <section class="dropdown__content">
+                        <div class="added__content_elem">English</div>
+                        <div class="content__creator__con">
+                            <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>add language</span></button>
+                        </div>
+                    </section> 
+                </li>
+                <li class="dropdown__con">
+                    <div class="dropdown__title__con">
+                        <div class="dropdown__title"><h2>Hobbies</h2></div>
+                        <button class="dropdown__btn"><span class="material-symbols-outlined">
+expand_more
+</span></button>
+                    </div>
+                    <section class="dropdown__content">
+                        <div class="content__creator__con">
+                            <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add hobby</span></button>
+                        </div>
+                    </section> 
+                </li>
+                <li class="dropdown__con">
+                    <div class="dropdown__title__con">
+                        <div class="dropdown__title"><h2>Achievements</h2></div>
+                        <button class="dropdown__btn"><span class="material-symbols-outlined">
+expand_more
+</span></button>
+                    </div>
+                    <section class="dropdown__content">
+                        <div class="content__creator__con">
+                            <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add achievement</span></button>
+                        </div>
+                    </section> 
+                </li>
+                <li class="dropdown__con">
+                    <div class="dropdown__title__con">
+                        <div class="dropdown__title"><h2>Nonstandard post</h2></div>
+                        <button class="dropdown__btn"><span class="material-symbols-outlined">
+expand_more
+</span></button>
+                    </div>
+                    <section class="dropdown__content">
+                        <div class="content__creator__con">
+                            <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add post</span></button>
                         </div>
                     </section> 
                 </li>
