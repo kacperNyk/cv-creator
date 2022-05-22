@@ -40,8 +40,14 @@ expand_more
                         <label for="address" class="adress__label">
                             <p class="elem__title">Addres</p>
                             <input type="text" id="city-name" placeholder="New York">
-                            <input type="text" id="city-number" placeholder="100-100">
-                            <input type="text" id="street" placeholder="street">
+                            <div class="half__inputs__con">
+                                <div class="input__half__elem input-half">
+                                    <input type="text" id="city-number" placeholder="100-100">
+                                </div>
+                                <div class="input__half__elem input-half">
+                                    <input type="text" id="street" placeholder="street">
+                                </div>
+                            </div>
                         </label>
                         <p class="elem__title">Phone</p>
                         <input type="tel" id="phone-number" placeholder="000-000-000">
@@ -63,18 +69,18 @@ expand_more
                     </div>
                     <section class="dropdown__content">
                         <div class="content__creator__con">
-                            <div class="content__creator content__creator-date-place">
-                                <label>
-                                    <p class="elem__title">Education</p>
-                                    <input type="text" id="education-input">
-                                    <p class="elem__title input-half">School name</p>
-                                    <input type="text" id="school-name" class="input-half">
-                                    <p class="elem__title">Place</p>
-                                    <input type="text" id="school-place">
-                                </label>
+                            <div class="content__creator content__creator-title-level">
+                                <p class="elem__title ">Skill</p>
+                                <input type="text" id="skill-name">
+                                <div class="range__input__con half__inputs__con">
+                                    <div class="input__slider__elem input__half__elem input-half"></div>
+                                    <p>noob</p>
+                                </div>
+                                <div class="creator__buttons__con">
+                                    <button class="creator__deleate__btn"><span class="material-symbols-outlined">delete</span></button>
+                                    <button class="creator__done__btn"><span class="material-symbols-outlined">done</span><span>Done</span></button>
+                                </div>
                             </div>
-                            <div class="content__creator content__creator-title-level"></div>
-                            <div class="content__creator content__creator-description"></div>
                             <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add skill</span></button>
                         </div>
                     </section> 
@@ -86,6 +92,40 @@ expand_more
                     </div>
                     <section class="dropdown__content">
                         <div class="content__creator__con">
+                            <div class="content__creator content__creator-date-place">
+                                <label>
+                                    <p class="elem__title">Position</p>
+                                    <input type="text" id="work-poaition-input">
+                                    <div class="half__inputs__con">
+                                        <div class="input__half__elem input-half">
+                                            <p class="elem__title ">Company name</p>
+                                            <input type="text" id="company-name">
+                                        </div>
+                                        <div class="input__half__elem input-half">
+                                            <p class="elem__title ">Location</p>
+                                            <input type="text" id="company-place">
+                                        </div>
+                                    </div>
+                                    <div class="half__inputs__con">
+                                        <div class="input__half__elem input-half">
+                                            <p class="elem__title ">Start date</p>
+                                            <input type="text" placeholder="dd.mm.rrrr" onfocus="(this.type='date')">
+                                        </div>
+                                        <div class="input__half__elem input-half">
+                                            <p class="elem__title ">End date</p>
+                                            <input type="text" placeholder="dd.mm.rrrr" onfocus="(this.type='date')">
+                                        </div>
+                                    </div>
+                                </label>
+                                <div class="create__description__input">
+                                    <p class="elem__title ">Description</p>
+                                    <textarea type="text" id="description" class="create__description__input__elem"></textarea>
+                                </div>
+                                <div class="creator__buttons__con">
+                                    <button class="creator__deleate__btn"><span class="material-symbols-outlined">delete</span></button>
+                                    <button class="creator__done__btn"><span class="material-symbols-outlined">done</span><span>Done</span></button>
+                                </div>
+                            </div>
                             <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add experience</span></button>
                         </div>
                     </section> 
@@ -97,6 +137,40 @@ expand_more
                     </div>
                     <section class="dropdown__content">
                         <div class="content__creator__con">
+                            <div class="content__creator content__creator-date-place">
+                                <label>
+                                    <p class="elem__title">Education</p>
+                                    <input type="text" id="education-input">
+                                    <div class="half__inputs__con">
+                                        <div class="input__half__elem input-half">
+                                            <p class="elem__title ">School name</p>
+                                            <input type="text" id="school-name">
+                                        </div>
+                                        <div class="input__half__elem input-half">
+                                            <p class="elem__title ">Place</p>
+                                            <input type="text" id="school-place">
+                                        </div>
+                                    </div>
+                                    <div class="half__inputs__con">
+                                        <div class="input__half__elem input-half">
+                                            <p class="elem__title ">Start date</p>
+                                            <input type="text" placeholder="dd.mm.rrrr" onfocus="(this.type='date')">
+                                        </div>
+                                        <div class="input__half__elem input-half">
+                                            <p class="elem__title ">End date</p>
+                                            <input type="text" placeholder="dd.mm.rrrr" onfocus="(this.type='date')">
+                                        </div>
+                                    </div>
+                                </label>
+                                <div class="create__description__input">
+                                    <p class="elem__title ">Description</p>
+                                    <textarea type="text" id="description" class="create__description__input__elem"></textarea>
+                                </div>
+                                <div class="creator__buttons__con">
+                                    <button class="creator__deleate__btn"><span class="material-symbols-outlined">delete</span></button>
+                                    <button class="creator__done__btn"><span class="material-symbols-outlined">done</span><span>Done</span></button>
+                                </div>
+                            </div>
                             <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add education</span></button>
                         </div>
                     </section> 
@@ -120,6 +194,16 @@ expand_more
                     </div>
                     <section class="dropdown__content">
                         <div class="content__creator__con">
+                            <div class="content__creator content__creator-description">
+                                <div class="create__description__input">
+                                    <p class="elem__title ">Description</p>
+                                    <textarea type="text" id="description" class="create__description__input__elem"></textarea>
+                                </div>
+                                <div class="creator__buttons__con">
+                                    <button class="creator__deleate__btn"><span class="material-symbols-outlined">delete</span></button>
+                                    <button class="creator__done__btn"><span class="material-symbols-outlined">done</span><span>Done</span></button>
+                                </div>
+                            </div>
                             <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add hobby</span></button>
                         </div>
                     </section> 
@@ -131,6 +215,16 @@ expand_more
                     </div>
                     <section class="dropdown__content">
                         <div class="content__creator__con">
+                            <div class="content__creator content__creator-description">
+                                <div class="create__description__input">
+                                    <p class="elem__title ">Description</p>
+                                    <textarea type="text" id="description" class="create__description__input__elem"></textarea>
+                                </div>
+                                <div class="creator__buttons__con">
+                                    <button class="creator__deleate__btn"><span class="material-symbols-outlined">delete</span></button>
+                                    <button class="creator__done__btn"><span class="material-symbols-outlined">done</span><span>Done</span></button>
+                                </div>
+                            </div>
                             <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add achievement</span></button>
                         </div>
                     </section> 

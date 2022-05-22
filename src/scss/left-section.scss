@@ -27,9 +27,19 @@
   margin-block-end: .5em;
 }
 
-.input-half{
-  width: 45%;
+.half__inputs__con{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  &.input__half__elem{
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
+.input-half{
+  width: 49%;
+}
+
 
 .dropdown__content {
   padding: 5px;
@@ -50,9 +60,34 @@
   width: fit-content;
   @include mix.hover-focus();
 
-  & .material-symbols-outlined{
-    font-size: 18px;
+}
+.range__input__con{
+  @include mix.flex-center($justify: space-between);
+  width: 70%;
+  & .input__slider__elem{
+    position: relative;
+    width: 75%;
+    height: 5px;
+    border: 1px solid vars.$darker-grey;
+    border-radius: 10px;
+    background-color: vars.$light-grey;
+    &::before{
+      $height: 20px;
+      $range-before-left: 0%;
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: calc($range-before-left - ($height/2));
+      height: $height;
+      width: $height;
+      border-radius: 50%;
+      background-color: vars.$dark-violet;
+    }
   }
+}
+
+.create__description__input__elem{
+  min-height: 150px;
 }
 
 .content__creator__con{
@@ -62,22 +97,59 @@
   @include mix.hover-focus();
 }
 
-input {
+.content__creator-date-place{
+  height: 100%;
+  & label{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.creator__buttons__con{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+  & .creator__done__btn{
+    padding: 5px 15px;
+    background-color: vars.$dark-violet;
+    color: vars.$light-color;
+    display: flex;
+    justify-items: space-between;
+    & .material-symbols-outlined{
+      margin-left: -5px;
+    }
+  }
+  & .creator__deleate__btn{
+    margin-right: 1%;
+  }
+}
+
+input,
+textarea {
   width: 100%;
   border: 1px solid transparent;
-  border-radius: 2px;
+  border-radius: 5px;
   background-color: vars.$input-bg;
   padding:7px;
   margin-bottom: 5px;
   font-size: vars.$normal-font;
+  resize: none;
   @include mix.hover-focus();
 }
 
 button{
-    border: 1px solid vars.$dark-color;
-    background: transparent;
-    padding: 7px;
-    font-size: vars.$normal-font;
-    @include mix.flex-center();
-    @include mix.hover-focus();
+  border: 1px solid vars.$darker-grey;
+  border-radius: 5px;
+  background: transparent;
+  padding: 5px;
+  font-size: vars.$normal-font;
+  @include mix.flex-center();
+  @include mix.hover-focus();
+}
+.material-symbols-outlined{
+  font-size: 20px;
 }
