@@ -1,2 +1,2 @@
-const btn=document.querySelector(".dropdown__btn").addEventListener("click",(()=>{document.querySelector(".dropdown__content").classList.toggle("hidden")}));
+import{AddBtnsElements,removeContentCreator,renderCreatorDatePlace}from"./left/addContent.js";const dropdownElemBtnsArray=[...document.querySelectorAll("#dropdown-btn")];dropdownElemBtnsArray.forEach((e=>{e.addEventListener("click",(()=>{e.parentElement.classList.toggle("content-unactive"),e.classList.toggle("clicked")}))})),AddBtnsElements(),removeContentCreator(),renderCreatorDatePlace();
 //# sourceMappingURL=app.js.map

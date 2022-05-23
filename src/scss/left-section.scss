@@ -70,7 +70,7 @@
     height: 5px;
     border: 1px solid vars.$darker-grey;
     border-radius: 10px;
-    background-color: vars.$light-grey;
+    background-color: vars.$input-bg;
     &::before{
       $height: 20px;
       $range-before-left: 0%;
@@ -119,12 +119,39 @@
     color: vars.$light-color;
     display: flex;
     justify-items: space-between;
+    transition: .3s ease;
     & .material-symbols-outlined{
       margin-left: -5px;
+    }
+    &:hover{
+      opacity: .8;
     }
   }
   & .creator__deleate__btn{
     margin-right: 1%;
+  }
+}
+.add__content__btn,
+.add__input__elem,
+.creator__deleate__btn{
+  @include mix.hover-bg($bg: vars.$input-bg);
+  cursor: pointer;
+}
+
+.added__content__con{
+  @include mix.flex-center($justify: flex-start, $align: flex-start, $direction: column);
+  position: relative;
+  border: 1px solid vars.$dark-color;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  @include mix.hover-focus();
+  & .added__content__con__subtitle{
+    opacity: .6;
+  }
+  & .icon__edit{
+    position: absolute;
+    right: 10px;
   }
 }
 
@@ -147,9 +174,19 @@ button{
   background: transparent;
   padding: 5px;
   font-size: vars.$normal-font;
+  cursor: pointer;
   @include mix.flex-center();
   @include mix.hover-focus();
+  transition: transform .5s ease;
+  &.clicked{
+    transform: rotateX(180deg);
+  }
 }
 .material-symbols-outlined{
   font-size: 20px;
+}
+
+//btn .dropdown__btn gives class .content-unactive from js 
+.content-unactive + .dropdown__content{
+  display: none;
 }

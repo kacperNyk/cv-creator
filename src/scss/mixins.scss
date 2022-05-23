@@ -19,9 +19,16 @@
 }
 
 @mixin hover-focus() {
-    transition: border .1s ease;
+    transition: border .2s ease;
     &:hover,
     &:focus {
       border: 1px solid vars.$dark-violet;
+    }
+}
+@mixin hover-bg($bg) {
+    transition: background-Color .3 ease;
+    &:hover,
+    &:focus{
+        background: $bg;
     }
 }

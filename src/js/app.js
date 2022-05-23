@@ -1,7 +1,13 @@
-const btn = document
-  .querySelector(".dropdown__btn")
-  .addEventListener("click", () => {
-    const dropdowncontent = document
-      .querySelector(".dropdown__content")
-      .classList.toggle("hidden");
+import { AddBtnsElements, removeContentCreator, renderCreatorDatePlace } from "./left/addContent.js";
+
+const dropdownElemBtnsArray = [...document.querySelectorAll("#dropdown-btn")];
+dropdownElemBtnsArray.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    btn.parentElement.classList.toggle("content-unactive");
+    btn.classList.toggle("clicked");
   });
+});
+
+AddBtnsElements();
+removeContentCreator();
+renderCreatorDatePlace();
