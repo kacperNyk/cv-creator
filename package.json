@@ -26,5 +26,8 @@
     "gulp-uglifyes": "^0.2.1",
     "gulp-webp": "^4.0.1",
     "sass": "^1.52.0"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
   }
 }

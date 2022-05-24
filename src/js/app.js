@@ -1,4 +1,8 @@
-import { AddBtnsElements, removeContentCreator, renderCreatorDatePlace } from "./left/addContent.js";
+import {
+  AddBtnsElements,
+  removeContentCreator,
+  renderCreatorDatePlace,
+} from "./left/addContent.js";
 
 const dropdownElemBtnsArray = [...document.querySelectorAll("#dropdown-btn")];
 dropdownElemBtnsArray.forEach((btn) => {

@@ -79,21 +79,23 @@
                     </div>
                     <section class="dropdown__content">
                         <div class="content__creator__con" id="content-creator-con">
-                            <div class="content__creator content__creator-title-level">
-                                <label for="input">
-                                    <p class="elem__title">Skill</p>
-                                    <input type="text" id="skill-name">
-                                </label> 
-                                <div class="range__input__con half__inputs__con">
-                                    <div class="input__slider__elem input__half__elem input-half"></div>
-                                    <p>noob</p>
+                            <template class="content__creator content__creator-title-level">
+                                <div class="content__creator content__creator-title-level">
+                                    <label for="input">
+                                        <p class="elem__title">Skill</p>
+                                        <input type="text" id="skill-name">
+                                    </label> 
+                                    <div class="range__input__con half__inputs__con">
+                                        <div class="input__slider__elem input__half__elem input-half"></div>
+                                        <p>noob</p>
+                                    </div>
+                                    <div class="creator__buttons__con">
+                                        <button class="creator__deleate__btn" id="creator-deleate-btn"><span class="material-symbols-outlined">delete</span></button>
+                                        <button class="creator__done__btn" id="creator-done-btn"><span class="material-symbols-outlined">done</span>Done</button>
+                                    </div>
                                 </div>
-                                <div class="creator__buttons__con">
-                                    <button class="creator__deleate__btn" id="creator-deleate-btn"><span class="material-symbols-outlined">delete</span></button>
-                                    <button class="creator__done__btn" id="creator-done-btn"><span class="material-symbols-outlined">done</span>Done</button>
-                                </div>
-                            </div>
-                            <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add skill</span></button>
+                                <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add skill</span></button>
+                            </template>
                         </div>
                     </section> 
                 </li>
@@ -104,7 +106,8 @@
                     </div>
                     <section class="dropdown__content">
                         <div class="content__creator__con" id="content-creator-con">
-                            <div class="content__creator content__creator-date-place">
+                            <template class="content__creator content__creator-date-place">
+
                                 <label>
                                     <label for="input">
                                         <p class="elem__title">Position</p>
@@ -147,8 +150,8 @@
                                     <button class="creator__deleate__btn" id="creator-deleate-btn"><span class="material-symbols-outlined">delete</span></button>
                                     <button class="creator__done__btn" id="creator-done-btn"><span class="material-symbols-outlined">done</span>Done</button>
                                 </div>
-                            </div>
-                            <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add experience</span></button>
+                                <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add experience</span></button>
+                            </template>
                         </div>
                     </section> 
                 </li>
