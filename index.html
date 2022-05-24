@@ -23,7 +23,7 @@
             <ul class="dropdown__elem__list">
                 <li class="dropdown__con" id="dropdown-con">
                     <div class="dropdown__title__con">
-                        <div class="dropdown__title"><h2>Personal Data</h2></div>
+                        <div class="dropdown__title"><h2 id="dropdown-title">Personal Data</h2></div>
                         <button class="dropdown__btn" id="dropdown-btn"><span class="material-symbols-outlined">expand_more</span></button>
                     </div>
                     <section class="dropdown__content">
@@ -74,34 +74,32 @@
                 </li>
                 <li class="dropdown__con" id="dropdown-con">
                     <div class="dropdown__title__con">
-                        <div class="dropdown__title"><h2>Skills</h2></div>
+                        <div class="dropdown__title"><h2 id="dropdown-title">Skills</h2></div>
                         <button class="dropdown__btn" id="dropdown-btn"><span class="material-symbols-outlined">expand_more</span></button>
                     </div>
                     <section class="dropdown__content">
-                        <div class="content__creator__con" id="content-creator-con">
-                            <template class="content__creator content__creator-title-level">
-                                <div class="content__creator content__creator-title-level">
-                                    <label for="input">
-                                        <p class="elem__title">Skill</p>
-                                        <input type="text" id="skill-name">
-                                    </label> 
-                                    <div class="range__input__con half__inputs__con">
-                                        <div class="input__slider__elem input__half__elem input-half"></div>
-                                        <p>noob</p>
-                                    </div>
-                                    <div class="creator__buttons__con">
-                                        <button class="creator__deleate__btn" id="creator-deleate-btn"><span class="material-symbols-outlined">delete</span></button>
-                                        <button class="creator__done__btn" id="creator-done-btn"><span class="material-symbols-outlined">done</span>Done</button>
-                                    </div>
+                        <div class="content__creator__con" id="content-creator-con-test">
+                            <template class="content__creator content__creator-title-level" id="content-creator-title-level">
+                                <label for="input">
+                                    <p class="elem__title">Skill</p>
+                                    <input type="text" id="skill-name">
+                                </label> 
+                                <div class="range__input__con half__inputs__con">
+                                    <div class="input__slider__elem input__half__elem input-half"></div>
+                                    <p>noob</p>
                                 </div>
-                                <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add skill</span></button>
+                                <div class="creator__buttons__con">
+                                    <button class="creator__deleate__btn" id="creator-deleate-btn"><span class="material-symbols-outlined">delete</span></button>
+                                    <button class="creator__done__btn" id="creator-done-btn"><span class="material-symbols-outlined">done</span>Done</button>
+                                </div>
                             </template>
                         </div>
+                        <button class="add__content__btn" id="creator-type-title-level"><span class="material-symbols-outlined">add</span><span>Add skill</span></button>
                     </section> 
                 </li>
                 <li class="dropdown__con" id="dropdown-con">
                     <div class="dropdown__title__con">
-                        <div class="dropdown__title"><h2>Experience</h2></div>
+                        <div class="dropdown__title"><h2 id="dropdown-title">Experience</h2></div>
                         <button class="dropdown__btn" id="dropdown-btn"><span class="material-symbols-outlined">expand_more</span></button>
                     </div>
                     <section class="dropdown__content">
@@ -150,23 +148,25 @@
                                     <button class="creator__deleate__btn" id="creator-deleate-btn"><span class="material-symbols-outlined">delete</span></button>
                                     <button class="creator__done__btn" id="creator-done-btn"><span class="material-symbols-outlined">done</span>Done</button>
                                 </div>
-                                <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add experience</span></button>
                             </template>
                         </div>
+                        <button class="add__content__btn" id="creator-type-date-time"><span class="material-symbols-outlined">add</span><span>Add experience</span></button>
                     </section> 
                 </li>
                 <li class="dropdown__con" id="dropdown-con">
                     <div class="dropdown__title__con">
-                        <div class="dropdown__title"><h2>Education</h2></div>
+                        <div class="dropdown__title"><h2 id="dropdown-title">Education</h2></div>
                         <button class="dropdown__btn" id="dropdown-btn"><span class="material-symbols-outlined">expand_more</span></button>
                     </div>
                     <section class="dropdown__content">
-                        <div class="content__creator__con" id="content-creator-con">
+                        <div class="content__creator__con" id="content-creator-con"></div>
+                        <button class="add__content__btn" id="creator-type-date-time"><span class="material-symbols-outlined">add</span><span>Add Education</span></button>
                     </section> 
+
                 </li>
                 <li class="dropdown__con" id="dropdown-con">
                     <div class="dropdown__title__con">
-                        <div class="dropdown__title"><h2>Languages</h2></div>
+                        <div class="dropdown__title"><h2 id="dropdown-title">Languages</h2></div>
                         <button class="dropdown__btn" id="dropdown-btn"><span class="material-symbols-outlined">expand_more</span></button>
                     </div>
                     <section class="dropdown__content">
@@ -175,50 +175,49 @@
                             <div class="added__content__con__subtitle">begginer</div>
                             <button class="icon__edit"><span class="material-symbols-outlined">edit</span></button>
                         </div>
-                        <div class="content__creator__con" id="content-creator-con">
+                        <div class="content__creator__con" id="content-creator-des creator-des-language"></div>
+                        <button class="add__content__btn" id="creator-type-title-level"><span class="material-symbols-outlined">add</span><span>Add Language</span></button>
                     </section> 
                 </li>
                 <li class="dropdown__con" id="dropdown-con">
                     <div class="dropdown__title__con">
-                        <div class="dropdown__title"><h2>Hobbies</h2></div>
+                        <div class="dropdown__title"><h2 id="dropdown-title">Hobbies</h2></div>
                         <button class="dropdown__btn" id="dropdown-btn"><span class="material-symbols-outlined">expand_more</span></button>
                     </div>
                     <section class="dropdown__content">
                         <div class="content__creator__con" id="content-creator-con">
                             <template class="content__creator content__creator-description">
-                                <div class="content__creator content__creator-description">
-                                    <div class="create__description__input">
-                                        <p class="elem__title ">Description</p>
-                                        <textarea type="text" id="description" class="create__description__input__elem"></textarea>
-                                    </div>
-                                    <div class="creator__buttons__con">
-                                        <button class="creator__deleate__btn" id="creator-deleate-btn"><span class="material-symbols-outlined">delete</span></button>
-                                        <button class="creator__done__btn" id="creator-done-btn"><span class="material-symbols-outlined">done</span>Done</button>
-                                    </div>
+                                <div class="create__description__input">
+                                    <p class="elem__title ">Description</p>
+                                    <textarea type="text" id="description" class="create__description__input__elem"></textarea>
                                 </div>
-                                <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add hobby</span></button>
+                                <div class="creator__buttons__con">
+                                    <button class="creator__deleate__btn" id="creator-deleate-btn"><span class="material-symbols-outlined">delete</span></button>
+                                    <button class="creator__done__btn" id="creator-done-btn"><span class="material-symbols-outlined">done</span>Done</button>
+                                </div>
                             </template>
                         </div>
+                        <button class="add__content__btn" id="creator-type-description"><span class="material-symbols-outlined">add</span><span>Add Hobby</span></button>
                     </section> 
                 </li>
                 <li class="dropdown__con" id="dropdown-con">
                     <div class="dropdown__title__con">
-                        <div class="dropdown__title"><h2>Achievements</h2></div>
+                        <div class="dropdown__title"><h2 id="dropdown-title">Achievements</h2></div>
                         <button class="dropdown__btn" id="dropdown-btn"><span class="material-symbols-outlined">expand_more</span></button>
                     </div>
                     <section class="dropdown__content">
-                        <div class="content__creator__con" id="content-creator-con">
-                        </div>
-                    </section> 
+                        <div class="content__creator__con" id="content-creator-con"></div>
+                        <button class="add__content__btn" id="creator-type-description"><span class="material-symbols-outlined">add</span><span>Add Achievement</span></button> 
+                    </section>
                 </li>
                 <li class="dropdown__con" id="dropdown-con">
                     <div class="dropdown__title__con">
-                        <div class="dropdown__title"><h2>Nonstandard post</h2></div>
+                        <div class="dropdown__title"><h2 id="dropdown-title">Nonstandard post</h2></div>
                         <button class="dropdown__btn" id="dropdown-btn"><span class="material-symbols-outlined">expand_more</span></button>
                     </div>
                     <section class="dropdown__content">
-                        <div class="content__creator__con" id="content-creator-con">
-                            <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add post</span></button>
+                        <div class="content__creator__con" id="content-creator-con"></div>
+                            <button class="add__content__btn" id="creator-type-menu"><span class="material-symbols-outlined">add</span><span>Add post</span></button>
                         </div>
                     </section> 
                 </li>

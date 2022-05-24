@@ -15,9 +15,11 @@ export function AddBtnsElements() {
     });
   });
 }
-
 export function renderCreatorDatePlace(dest) {
-
+  const templateTitleLevel = document.querySelector(".content__creator-title-level");
+  const template = templateTitleLevel.content.cloneNode(true);
+  dest.appendChild(template);
+  console.log(dest)
 }
 
 export function removeContentCreator() {

@@ -137,6 +137,9 @@
   @include mix.hover-bg($bg: vars.$input-bg);
   cursor: pointer;
 }
+.add__content__btn{
+  margin-top: 10px;
+}
 
 .added__content__con{
   @include mix.flex-center($justify: flex-start, $align: flex-start, $direction: column);
