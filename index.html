@@ -162,52 +162,6 @@
                     </div>
                     <section class="dropdown__content">
                         <div class="content__creator__con" id="content-creator-con">
-                            <div class="content__creator content__creator-date-place">
-                                <label>
-                                    <label for="input">
-                                        <p class="elem__title">Education</p>
-                                        <input type="text" id="education-input">
-                                    </label> 
-                                    <div class="half__inputs__con">
-                                        <div class="input__half__elem input-half">
-                                            <label for="input">
-                                                <p class="elem__title ">School name</p>
-                                                <input type="text" id="school-name">
-                                            </label> 
-                                        </div>
-                                        <div class="input__half__elem input-half">
-                                            <label for="input">
-                                                <p class="elem__title ">Place</p>
-                                                <input type="text" id="school-place">
-                                            </label> 
-                                        </div>
-                                    </div>
-                                    <div class="half__inputs__con">
-                                        <div class="input__half__elem input-half">
-                                            <label for="input">
-                                                <p class="elem__title ">Start date</p>
-                                                <input type="text" placeholder="dd.mm.rrrr" onfocus="(this.type='date')">
-                                            </label> 
-                                        </div>
-                                        <div class="input__half__elem input-half">
-                                            <label for="input">
-                                                <p class="elem__title ">End date</p>
-                                                <input type="text" placeholder="dd.mm.rrrr" onfocus="(this.type='date')">
-                                            </label>
-                                        </div>
-                                    </div>
-                                </label>
-                                <div class="create__description__input">
-                                    <p class="elem__title ">Description</p>
-                                    <textarea type="text" id="description" class="create__description__input__elem"></textarea>
-                                </div>
-                                <div class="creator__buttons__con">
-                                    <button class="creator__deleate__btn" id="creator-deleate-btn"><span class="material-symbols-outlined">delete</span></button>
-                                    <button class="creator__done__btn" id="creator-done-btn"><span class="material-symbols-outlined">done</span>Done</button>
-                                </div>
-                            </div>
-                            <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add education</span></button>
-                        </div>
                     </section> 
                 </li>
                 <li class="dropdown__con" id="dropdown-con">
@@ -222,22 +176,6 @@
                             <button class="icon__edit"><span class="material-symbols-outlined">edit</span></button>
                         </div>
                         <div class="content__creator__con" id="content-creator-con">
-                            <div class="content__creator content__creator-title-level">
-                                <label for="input">
-                                    <p class="elem__title ">Language</p>
-                                    <input type="text" id="language-name">
-                                </label>
-                                <div class="range__input__con half__inputs__con">
-                                    <div class="input__slider__elem input__half__elem input-half"></div>
-                                    <p>noob</p>
-                                </div>
-                                <div class="creator__buttons__con">
-                                    <button class="creator__deleate__btn" id="creator-deleate-btn"><span class="material-symbols-outlined">delete</span></button>
-                                    <button class="creator__done__btn" id="creator-done-btn"><span class="material-symbols-outlined">done</span>Done</button>
-                                </div>
-                            </div>
-                            <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>add language</span></button>
-                        </div>
                     </section> 
                 </li>
                 <li class="dropdown__con" id="dropdown-con">
@@ -247,17 +185,19 @@
                     </div>
                     <section class="dropdown__content">
                         <div class="content__creator__con" id="content-creator-con">
-                            <div class="content__creator content__creator-description">
-                                <div class="create__description__input">
-                                    <p class="elem__title ">Description</p>
-                                    <textarea type="text" id="description" class="create__description__input__elem"></textarea>
+                            <template class="content__creator content__creator-description">
+                                <div class="content__creator content__creator-description">
+                                    <div class="create__description__input">
+                                        <p class="elem__title ">Description</p>
+                                        <textarea type="text" id="description" class="create__description__input__elem"></textarea>
+                                    </div>
+                                    <div class="creator__buttons__con">
+                                        <button class="creator__deleate__btn" id="creator-deleate-btn"><span class="material-symbols-outlined">delete</span></button>
+                                        <button class="creator__done__btn" id="creator-done-btn"><span class="material-symbols-outlined">done</span>Done</button>
+                                    </div>
                                 </div>
-                                <div class="creator__buttons__con">
-                                    <button class="creator__deleate__btn" id="creator-deleate-btn"><span class="material-symbols-outlined">delete</span></button>
-                                    <button class="creator__done__btn" id="creator-done-btn"><span class="material-symbols-outlined">done</span>Done</button>
-                                </div>
-                            </div>
-                            <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add hobby</span></button>
+                                <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add hobby</span></button>
+                            </template>
                         </div>
                     </section> 
                 </li>
@@ -268,17 +208,6 @@
                     </div>
                     <section class="dropdown__content">
                         <div class="content__creator__con" id="content-creator-con">
-                            <div class="content__creator content__creator-description">
-                                <div class="create__description__input">
-                                    <p class="elem__title ">Description</p>
-                                    <textarea type="text" id="description" class="create__description__input__elem"></textarea>
-                                </div>
-                                <div class="creator__buttons__con">
-                                    <button class="creator__deleate__btn" id="creator-deleate-btn"><span class="material-symbols-outlined">delete</span></button>
-                                    <button class="creator__done__btn" id="creator-done-btn"><span class="material-symbols-outlined">done</span>Done</button>
-                                </div>
-                            </div>
-                            <button class="add__content__btn"><span class="material-symbols-outlined">add</span><span>Add achievement</span></button>
                         </div>
                     </section> 
                 </li>
